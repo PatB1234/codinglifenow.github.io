@@ -21,6 +21,7 @@ p {
 }
 a {
     font-size: large;
+    text-align: center;
 }
   
 * {
@@ -44,4 +45,8 @@ a {
  
 .section p {
  font: 15px/25px Helvetica, sans-serif;
+}
+html body {
+    background-color:beige;
+
 }
