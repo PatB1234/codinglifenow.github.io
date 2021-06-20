@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YT Coding Page + Gaming</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "Images/logo.png" type = "image/x-icon">
+</head>
+<body>
+  <h1 align = "center">Welcome to my YT Page!</h1>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm">
+                <a href = "index.html" style = "color: black;">Home</a>
+            </div>
+            <br/>
+            <div class =  "col-sm" >
+                <a href = "about.html"style = "color: black;">About Me</a>
+            </div>
+            <br/>
+            <div class = "col-sm">
+                <a href = "coding.html" style = "color: black;">Start Learning!</a>
+            </div>
+            <br/>
+            <div class = "col-sm">
+                <a href = "FeedbackBlog.html" style = "color: black">Feedback</a>
+            </div>
+            <br/> 
+            <div class = "col-sm">
+              <a href = "yt.html" style="color: black;">YT Vids + Coding Files</a> 
+            </div>
+        </div>
+    </div>
+  <div id="nav" class="clearfix">
+ <a href="#A1">Discord Part 1</a>
+ <br/>
+<button onclick="window.print()">Print everything, dont worry you can specify pages while printing</button>
+<div class="section">
+ <h1><a name="A1">Discord Part 1</a></h1>
+ <p>In The Video Below, I showed you how to make a discord bot! It is a very good Video so Subscribe and Like the video. Please I need Views. I will list the code Underneath</p>
+ <h4>Part One </h4>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/vnKd7sgBVyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <h4>Part Two</h4>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/Vy8l8TxhFwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <h4>Code:</h4>
+ <p>import discord</p>
+<p>import asyncio</p>
+<p> bot = discord.Client()</p>
+<p>@bot.event</p>
+<p>async def on_message(message):</p>
+    <p>print(message.content)</p>
+    <p>if (message.content == "Hello Bot"):</p>
+        <p>await message.channel.send("Hello YT!")</p>
+        <p>await message.channel.send(file=discord.File("Your File Adress"))</p>
+
+<p>bot.run('Your Token Here')</p>
+</div>
+ 
+ 
+<footer>© 2021 CodingLifeNow</footer>
+</body>
+</html>
