@@ -125,7 +125,53 @@
 
 
 <h1><a name="C1">Basic car movement</a></h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ <p>I will show yo how to make the car turn and move on repeat. First plug your car in to your laptop and open up the Arduino IDE. Make sure to select your port. Next, put in the code listed below, I will explain it at the end of the pictures</p>
+ <pre>
+    <font color="#00979c">int</font> <font color="#000000">ENA</font><font color="#434f54">=</font><font color="#000000">5</font><font color="#000000">;</font>
+    <font color="#00979c">int</font> <font color="#000000">ENB</font><font color="#434f54">=</font><font color="#000000">6</font><font color="#000000">;</font>
+    <font color="#00979c">int</font> <font color="#000000">IN1</font><font color="#434f54">=</font><font color="#000000">7</font><font color="#000000">;</font>
+    <font color="#00979c">int</font> <font color="#000000">IN2</font><font color="#434f54">=</font><font color="#000000">8</font><font color="#000000">;</font>
+    <font color="#00979c">int</font> <font color="#000000">IN3</font><font color="#434f54">=</font><font color="#000000">9</font><font color="#000000">;</font>
+    <font color="#00979c">int</font> <font color="#000000">IN4</font><font color="#434f54">=</font><font color="#000000">11</font><font color="#000000">;</font>
+    <font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+     &nbsp;<font color="#434f54">&#47;&#47; put your setup code here, to run once:</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">ENA</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">ENB</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">IN1</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">IN2</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">IN3</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">IN4</font><font color="#434f54">,</font><font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">ENA</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">ENB</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#000000">}</font>
+     
+    <font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+     &nbsp;<font color="#434f54">&#47;&#47; Right Turn</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN1</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN2</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN3</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN4</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#434f54">&#47;&#47;Left Turn</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN1</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN2</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN3</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN4</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#434f54">&#47;&#47;forward</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN1</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN2</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN3</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN4</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#434f54">&#47;&#47;backwards</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN1</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN2</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN3</font><font color="#434f54">,</font><font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">IN4</font><font color="#434f54">,</font><font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
+    <font color="#000000">}</font>
+ </pre>
 </div>
  
 <div class="section">
