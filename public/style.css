@@ -50,3 +50,10 @@ html body {
     background-color:beige;
 
 }
+textarea {
+    
+    width: 700;
+    height: 700;
+    resize: none;
+    overflow: auto;
+}
