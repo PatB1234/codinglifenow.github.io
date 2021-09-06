@@ -39,10 +39,6 @@
             <div class = "col-sm">
                 <a href = "downloads.html" style = "color: black;">Downloads</a>
             </div>
-            <div class = "col-sm">
-
-                <a href = "help.html" style = "color: black;">Help</a>
-            </div>
         </div>
     </div>
     <div align = "center">
@@ -96,7 +92,42 @@
  
 <div class="section">
  <h1><a name="A3">Making Traffic lights!</a></h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ <p>Video:</p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/9tEYT3H5boI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <p>Code:</p>
+ <textarea rows = "40" cols="50">
+int r = 4;
+int y = 7;
+int g = 8;
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+// initialize digital pin LED_BUILTIN as an output.
+pinMode(r, OUTPUT);
+pinMode(y, OUTPUT);
+pinMode(g, OUTPUT);
+
+}
+
+void light(int LED, float STATUS) {
+
+digitalWrite(LED, STATUS);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+light(r, LOW);
+light(g, HIGH);
+delay(5000);
+light(g, LOW);
+light(y, HIGH);
+delay(500);
+light(y, LOW);
+light(r, HIGH);
+delay(2500);
+}
+ </textarea>
 </div>
  
 <div class="section">
