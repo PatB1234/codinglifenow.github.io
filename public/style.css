@@ -3,7 +3,6 @@ body {
 }
 h1 {
   color: cornflowerblue;
-  font-family:'Courier New', Courier, monospace
 }
 
 h2 {
@@ -13,11 +12,6 @@ h2 {
 h4 {
     color: cornflowerblue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-p {
-    font-family: monospace;
-    font-size: 40px;
 }
 a {
     font-size: large;
