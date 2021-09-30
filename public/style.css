@@ -1,21 +1,33 @@
 body {
-    background-color: beige;
+
+  background-color: black;
+  background-image: url("Images/bg.png");
 }
+
 h1 {
-  color: cornflowerblue;
+
+  color: white;
 }
 
 h2 {
+
+    color: white;
     font-family: sans-serif
 }
 
 h4 {
+
+    color: white;
     color: cornflowerblue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 a {
-    font-size: large;
-    text-align: center;
+    text-decoration: none;
+    color: #237fd0;
+}
+a:hover {
+
+  color: #9e5f23;
 }
 
 * {
@@ -37,17 +49,21 @@ a {
  font: 55px/65px Helvetica, sans-serif;
 }
 
-.section p {
- font: 15px/25px Helvetica, sans-serif;
-}
-html body {
-    background-color:beige;
+p {
 
+  color: white;
+ font: 15px/25px Helvetica, sans-serif;
 }
 textarea {
 
+  background-color: #6E7271;
     width: 700;
     height: 700;
     resize: none;
     overflow: auto;
+}
+
+footer {
+
+  color: white;
 }
