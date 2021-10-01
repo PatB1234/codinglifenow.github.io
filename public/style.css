@@ -1,32 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
 
+  font-family: 'Roboto Thin';
   background-color: black;
   background-image: url("Images/bg.png");
 }
 
 h1 {
 
+  font-family: 'Roboto Thin';
   color: white;
 }
 
 h2 {
 
+  font-family: 'Roboto Thin';
     color: white;
-    font-family: sans-serif
 }
 
 h4 {
 
+  font-family: 'Roboto Thin';
     color: white;
     color: cornflowerblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 a {
+
+  font-family: 'Roboto Thin';
     text-decoration: none;
     color: #237fd0;
 }
 a:hover {
 
+  font-family: 'Roboto Thin';
   color: #9e5f23;
 }
 
@@ -51,11 +58,13 @@ a:hover {
 
 p {
 
+  font-family: 'Roboto Thin';
   color: white;
  font: 15px/25px Helvetica, sans-serif;
 }
 textarea {
 
+  font-family: 'Roboto Thin';
   background-color: #6E7271;
     width: 700;
     height: 700;
@@ -65,5 +74,17 @@ textarea {
 
 footer {
 
-  color: white;
+    font-family: 'Roboto Thin';
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    color: white;
+}
+
+img {
+
+  width: 80px;
+  height: 80px;
 }
